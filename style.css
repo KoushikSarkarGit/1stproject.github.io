@@ -1,0 +1,366 @@
+/* CSS RESET  */
+/* navigation bar */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --navbar-height: 40px;
+    --navbar-padding: 0px;
+}
+
+#navbar{
+/* border: 2px red solid; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+height: 67px;
+width: 100%;
+}
+
+#navbar ul{
+    
+    display: flex;
+   
+    }
+
+    #navbar::before{
+    content: "";
+    position: absolute ;
+       background-color: black;
+       height: 100%;
+       width: 100%;
+       z-index: -1;
+       opacity: 30%;
+       
+        }
+
+
+    #navbar ul li{
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        list-style: none;
+        font-size: 1.1rem;
+        
+        align-items: center;
+        }
+
+        #navbar ul li a{
+display: block;
+            /* border: 2px black solid; */
+            padding: 10px;
+            margin: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            }
+
+            #navbar ul li a:hover{
+                background-color: rgb(81, 80, 82);
+            }
+
+.logo{
+   
+    position: relative;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img{
+display: flex;
+    height: 56px;
+    width: 66px;
+padding: 3px;
+margin: 10px;
+border: 2px black solid;
+    border-radius: 15px;
+
+    
+}
+
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    
+     height: 228px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('backg.jpg');
+    background-position: -388px 890px;
+       height: 80%;
+       width: 100%;
+       z-index: -1;
+       opacity: 92%;
+   
+
+}
+
+
+
+.primaryh{
+    display: flex;
+    font-size: 2.1rem;
+    padding: 1px 10px;
+    margin: 85px 0px 0px 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+.para{
+    font-size: 1.1rem;
+    padding: 20px;
+text-align: center;
+font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+
+.phonepara{
+    font-size: 0.7rem;
+    padding: 10px;
+text-align: center;
+font-family: 'Baloo Bhaijaan 2', cursive;
+display: none;
+}
+
+
+.btn{
+    border: 2px rgb(13, 110, 255) solid;
+    font-size: 1rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 7px;
+    background-color: rgb(233, 193, 196);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(222, 238, 238);
+}
+
+#services-container{
+    display: flex;
+    justify-content: center;
+    /* border: 2px white solid; */
+}
+
+.service{
+    display: flex;
+    height: 400px;
+    margin: 193px 112px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 2px red solid; */
+    
+}
+
+#serviceHeading{
+    /* position: relative; */
+    display: block;
+    margin: auto;
+    margin-top: 185px;
+    padding: 2px;
+    font-size: 2.1rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+
+.style1{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.heading{
+    color: black;
+    font-size: 1.7rem;
+    margin: 1px;
+    padding: 1px;
+
+}
+
+.box{
+    
+    height: 250px;
+    width: 400px;
+    margin: 37px 25px;
+    padding: 3px;
+    border: 2px red solid;
+    border-radius: 5px;
+    background-color: rgb(255, 247, 239);
+    color: brown;
+    display: block;
+    margin: 60;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+    
+}
+
+
+.box:hover{
+box-shadow: 3px 4px 7px red;
+
+}
+
+.image{
+    /* display: flex; */
+    /* position: relative; */
+    /* height: 10vh;
+    width: 10vh; */
+    /* align-items: center;
+    justify-content: center; */
+    height: 90px;
+    border-radius: 2px;
+    margin: 10px 0px 0px 0px;
+}
+
+/* client section */
+
+#client{
+    /* display: flex; */
+    /* position: absolute; */
+    margin-top: 300px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 2.1rem;
+
+}
+
+.clientbox{
+    display: flex;
+    
+}
+
+#CLNEW{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 377px;
+    /* border: 2px black solid; */
+    /* background-image: url(client-back.jpg); */
+}
+
+#CLNEW::before{
+ 
+    content: "";
+    position: absolute;
+    background: url('client-back.jpg');
+    z-index: -1;
+    height: 42%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.cl img{
+
+    height: 80px;
+    width: 80px;
+    margin: 80px;
+    padding: 1px;
+    border-radius: 60px;
+    box-shadow: 1px 1px 10px red;
+    
+}
+
+.serviceHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 34px 0px 0px 0px; */
+    padding: 25px 0px 0px 0px;
+    font-size: 2.3rem;
+}
+
+
+/* formstylling */
+
+#contactus{
+    display: flex;
+    font-size: 2.3rem;
+    padding: 2px;
+    margin: -15px 0px 40px 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contactbox{
+
+    display: flex;
+    /* border: 2px black solid; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+
+   
+    
+}
+.formgrp{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-bottom: 2px;
+    padding: 2px;
+    /* border: 2px black solid; */
+    border-radius: 2px;
+    width: 80vh;
+    font-size: 1.15rem;
+    font-weight: bold;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    
+}
+
+#contactbox::before{
+    content: "";
+    position: absolute;
+    background: url('contact.jpg');
+    z-index: -1;
+    height: 42%;
+    width: 100%;
+    opacity: 0.3;
+
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
+#Name, #Email, #Phone{
+    height: 2.5ch;
+    border-radius: 4px;
+}
+
+#message{
+    height: 10ch;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    
+}
+
